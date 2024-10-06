@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    color: aliceblue;
+}
+
+nav{
+    position: fixed;
+    width: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 12vh;
+    justify-content: space-between;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(42, 42, 126);
+    font-family: "Roboto", sans-serif;
+    z-index: 100;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size:24px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgb(251, 230, 178);
+}
+
+nav .logo{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+/* main{
+    margin-top: 12vh;
+} */
+
+main section{
+    padding-top: 20vh;
+    min-height: 88vh;
+    /* border-bottom: 1px solid red; */
+    background-color: aqua;
+}
+
+main .home{
+    /* padding: 50px 25px; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(31, 31, 61);
+}
+
+main .home> div{
+    width: 40%;
+    height: auto;
+    /* background-color: aliceblue; */
+}
+
+main .home .leftSection .intro{
+    font-size: 3rem;
+    margin: 50px 0;
+}
+
+main .home .leftSection .intro #myname, #element{
+    color: rgb(127, 255, 244);
+}
+
+main .home .leftSection .socialmedia{
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    width: inherit;
+    align-items: center;
+    justify-content: space-around;
+    /* padding:25px; */
+    /* background-color: rgb(81, 96, 108); */
+}
+
+main .home .leftSection .socialmedia a{
+    text-decoration: none;
+    height: inherit;
+    width: 56px;
+    position: relative;
+    /* margin: 2rem; */
+}
+
+main .home .leftSection a .github-icon,
+main .home .leftSection a .linkedin-icon{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    color: white;
+    font-size: 48px
+}
+
+main .home .leftSection .github-icon:hover,
+main .home .leftSection .linkedin-icon:hover{
+    font-size: 52px
+}
+
+main .home .leftSection button{
+    font-size: 1.5rem;
+    padding: 10px 5px;
+    margin-top: 50px;
+    margin-left: 25px;
+    border: 3px solid rgb(119, 119, 252);
+    border-radius: 10px;
+    color: black;
+    transition: 0.7s ease;
+}
+
+main .home .leftSection button:hover{
+    cursor: pointer;
+    background-color: rgb(119, 119, 252);
+    color: aliceblue;
+    transition: 0.3s ease;
+}
+
+main .home .rightSection{
+    display: flex;
+    justify-content: center;
+}
+
+main .home .rightSection .photo{
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    border: 5px solid rgb(224, 202, 58);
+    border-radius: 50%;
+}
+
+main .home .rightSection .photo img{
+    width: 100%;
+    height: auto;
+}
+
+main .about_me,
+main .projects{
+    background-color: rgb(21 21 56);
+}
+
+main .skills,
+main .contact{
+    background-color: rgb(31, 31, 61)
+}
+
+main .about_me .about{
+    margin-left: 5rem;
+    width: 80%;
+}
+
+main .about_me .about h1{
+    /* margin-bottom: ; */
+    font-size: 2.5rem;
+}
+
+main .about_me .about .line{
+    display: block;
+    height: 3px;
+    width: 50%;
+    margin-bottom: 50px;
+    background-color: aliceblue;
+}
+main .about_me .about p{
+    font-size: x-large;
+    line-height: 45px;
+}
