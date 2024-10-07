@@ -3,23 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="./assets/styles/DarkMode/styles.css" />
+    <link rel="stylesheet" href="./assets/styles/DarkMode/navbar.css" />
+    <link rel="stylesheet" href="./assets/styles/DarkMode/sectionHome.css" />
+    <link rel="stylesheet" href="./assets/styles/DarkMode/sectionAboutMe.css" />
+    <link rel="stylesheet" href="./assets/styles/DarkMode/sectionSkills.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/styles/DarkMode/sectionProjects.css"
+    />
+    <link rel="stylesheet" href="./assets/styles/DarkMode/sectionContact.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
     <title>Document</title>
   </head>
   <body>
+
     <nav>
+
       <div class="logo">Tuhin Modak</div>
+
       <div class="options">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -27,59 +42,124 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><button><i class="fa fa-lightbulb-o"></i></button></li>
+          <li>
+            <button></button>
+          </li>
         </ul>
       </div>
+
     </nav>
+
     <main>
+
       <section id="home" class="home">
+
         <div class="leftSection">
+
           <div class="intro">
             HI, I AM <span id="myname">TUHIN</span>
             <div>AND I AM A</div>
             <span id="element"></span>
           </div>
+
           <div class="socialmedia">
-            <a href="">
+            <a href="https://github.com/TUHINMODAK">
               <i class="fa fa-github github-icon"></i>
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/tuhin-modak-a776212a8/">
               <i class="fa fa-linkedin-square linkedin-icon"></i>
             </a>
           </div>
+
           <button>Download Resume</button>
+
         </div>
+
         <div class="rightSection">
           <div class="photo">
             <img src="./assets/images/self-photo.jpg" alt="" />
           </div>
         </div>
+
       </section>
+
       <section id="about_me" class="about_me">
+
         <div class="about">
           <h1>About Me</h1>
           <span class="line"></span>
-          <p>My name is Tuhin Modak. I live in Durgapur, West Bengal.
-            I have studied from St. Xavier's school, Durgapur and Higher Secondary from Kendriya Vidyalaya, CMERI Durgapur.
-            Currently I am studying in Dr. B. C. Roy Engineering College, Durgapur.
-            Basically I am a passionate aspiring Computer Science Engineer and I want to fullfil 
-            my dream of becoming a successful Engineer. I love to solve problem especially if they are related to coding.
+          <p>
+            My name is Tuhin Modak. I live in Durgapur, West Bengal. I have
+            studied from St. Xavier's school, Durgapur and Higher Secondary from
+            Kendriya Vidyalaya, CMERI Durgapur. Currently I am studying in Dr.
+            B. C. Roy Engineering College, Durgapur. Basically I am a passionate
+            aspiring Computer Science Engineer and I want to fullfil my dream of
+            becoming a successful Engineer. I love to solve problem especially
+            if they are related to coding.
           </p>
         </div>
+
       </section>
+
       <section id="skills" class="skills">
-        <h1>Skills</h1>
+
+        <div class="skillset">
+          <h1>Skills</h1>
+          <span class="line"></span>
+
+          <div class="carousel-skills">
+            <div class="carousel-cards">
+              <img src="./assets/images/icons8-dark-mode-50.png" alt="Image 1" />
+              <img src="./assets/images/icons8-light-mode-78.png" alt="Image 2" />
+              <img src="./assets/images/self-photo.jpg" alt="Image 3" />
+            </div>
+          </div>
+          
+          <h2>Hands-on</h2>
+        </div>
+
+
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-item" onclick="goToProduct(1)">
+              <img
+                src="./assets/images/icons8-dark-mode-50.png"
+                alt="Product 1"
+              />
+            </div>
+            <div class="carousel-item" onclick="goToProduct(2)">
+              <img
+                src="./assets/images/icons8-light-mode-78.png"
+                alt="Product 2"
+              />
+            </div>
+            <div class="carousel-item" onclick="goToProduct(3)">
+              <img src="./assets/images/self-photo.jpg" alt="Product 3" />
+            </div>
+            <!-- Add more product items here -->
+          </div>
+          <button class="carousel-arrow left-arrow" onclick="moveLeft()">
+            ←
+          </button>
+          <button class="carousel-arrow right-arrow" onclick="moveRight()">
+            →
+          </button>
+        </div>
       </section>
+
       <section id="projects" class="projects">
         Hello this is Tuhin's projects!
       </section>
+
       <section id="contact" class="contact">Feel free to contact</section>
+
     </main>
 
     <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- Setup and start animation! -->
+     <script src="./assets/scripts/carousel-skills.js"></script>
     <script>
       var typed = new Typed("#element", {
         strings: [
@@ -89,7 +169,6 @@
         ],
         typeSpeed: 50,
         loop: true,
-        // loopCount: Infinity,
       });
     </script>
   </body>

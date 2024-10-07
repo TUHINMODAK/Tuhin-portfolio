@@ -1,0 +1,92 @@
+main .skills{
+  background-color: rgb(31, 31, 61);
+}
+
+main .skills .skillset {
+  margin-left: 5rem;
+  width: 80%;
+}
+
+main .skills .skillset h1 {
+  /* margin-bottom: ; */
+  font-size: 2.5rem;
+}
+
+main .skills .skillset .line {
+  display: block;
+  height: 3px;
+  width: 50%;
+  margin-bottom: 50px;
+  background-color: aliceblue;
+}
+
+main .skills .skillset .carousel-skills {
+  background-color: beige;
+  width: 500px; /* Adjust to fit your content */
+  height: 300px; /* Adjust to fit your content */
+  overflow: hidden; /* Hide the images outside of the container */
+  position: relative;
+}
+
+main .skills .skillset .carousel-skills .carousel-cards {
+  display: flex;
+  transition: transform 1s ease-in-out; /* Smooth transition between slides */
+}
+
+main .skills .skillset .carousel-skills .carousel-cards img {
+  width: 500px; /* Make the images fill the container */
+  height: 300px; /* Keep the height consistent */
+}
+
+main .skills .carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 200px; /* Adjust height according to your design */
+}
+
+main .skills .carousel-container .carousel {
+  display: flex;
+  width: 100%;
+  animation: scrollLeft 20s linear infinite;
+}
+
+main .skills .carousel-container .carousel .carousel-item {
+  min-width: 200px; /* Adjust width based on product size */
+  margin-right: 10px;
+}
+
+main .skills .carousel-container .carousel .carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+main .skills .carousel-container .carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+main .skills .carousel-container .left-arrow {
+  left: 10px;
+}
+
+main .skills .carousel-container .right-arrow {
+  right: 10px;
+}
+
+/* Keyframes to move carousel items from right to left */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

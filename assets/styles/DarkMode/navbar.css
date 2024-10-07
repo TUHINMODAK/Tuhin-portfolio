@@ -1,0 +1,52 @@
+nav {
+  position: fixed;
+  width: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 12vh;
+  justify-content: space-between;
+  padding: 0 70px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(42, 42, 126);
+  font-family: "Roboto", sans-serif;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li button {
+  background: transparent;
+  background-image: url("../../images/icons8-dark-mode-50.png");
+  background-size: contain; /* Scales the image to fit inside the button */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 35px;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: rgb(251, 230, 178);
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: 300;
+}

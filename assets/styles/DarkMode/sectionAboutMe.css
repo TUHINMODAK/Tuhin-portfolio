@@ -1,0 +1,26 @@
+main .about_me{
+  background-color: rgb(21 21 56);
+}
+
+main .about_me .about{
+  margin-left: 5rem;
+  width: 80%;
+}
+
+main .about_me .about h1{
+  /* margin-bottom: ; */
+  font-size: 2.5rem;
+}
+
+main .about_me .about .line{
+  display: block;
+  height: 3px;
+  width: 50%;
+  margin-bottom: 50px;
+  background-color: aliceblue;
+}
+
+main .about_me .about p {
+  font-size: x-large;
+  line-height: 45px;
+}
