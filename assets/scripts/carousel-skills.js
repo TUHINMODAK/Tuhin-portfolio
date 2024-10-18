@@ -1,16 +1,16 @@
-const carouselImages = document.querySelector('.carousel-cards');
-const images = document.querySelectorAll('.carousel-skills .carousel-cards img');
+const carouselskillcards = document.querySelector('.carousel-cards');
+const skillcards = document.querySelectorAll('.carousel-skills .carousel-cards .card');
 
 let index = 0;
-const totalImages = images.length;
+const totalskillcards = skillcards.length;
 
 function changeImage() {
     index++;
-    if (index === totalImages) {
+    if (index === totalskillcards) {
         index = 0; // Reset index to 0 for infinite loop
     }
     // Translate the carousel to the next image
-    carouselImages.style.transform = `translateX(${-index * 500}px)`;
+    carouselskillcards.style.transform = `translateX(${-index * 700}px)`;
 }
 
 // Change image every 3 seconds

@@ -54,7 +54,11 @@ main .home .leftSection .linkedin-icon:hover {
   font-size: 52px;
 }
 
-main .home .leftSection button {
+main .home .leftSection a{
+  text-decoration: none;
+}
+
+main .home .leftSection a button {
   font-size: 1.5rem;
   padding: 10px 5px;
   margin-top: 50px;
@@ -65,7 +69,7 @@ main .home .leftSection button {
   transition: 0.7s ease;
 }
 
-main .home .leftSection button:hover {
+main .home .leftSection a button:hover {
   cursor: pointer;
   background-color: rgb(119, 119, 252);
   color: aliceblue;
