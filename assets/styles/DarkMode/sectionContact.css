@@ -1,3 +1,92 @@
 main .contact {
   background-color: rgb(31, 31, 61);
 }
+
+main .contact .contactSec{
+  margin-left: 5rem;
+  width: 80%;
+}
+
+main .contact .contactSec h1{
+  /* margin-bottom: ; */
+  font-size: 2.5rem;
+}
+
+main .contact .contactSec .line{
+  display: block;
+  height: 3px;
+  width: 50%;
+  margin-bottom: 50px;
+  background-color: aliceblue;
+}
+
+main .contact .contactContent{
+  display: flex;
+  justify-content: space-evenly;
+}
+main .contact .contactContent > div{
+  /* background-color: red; */
+  width: 40%;
+  height: auto;
+}
+
+main .contact .contactContent .message form{
+  margin: 3% 3%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main .contact .contactContent .message form label,
+main .contact .contactContent .message form input,
+main .contact .contactContent .message form textarea{
+  margin: 10px 0;
+  border: none;
+  border-radius: 7px;
+}
+
+main .contact .contactContent .message form label{
+  font-size:larger;
+  font-weight: 700;
+}
+
+main .contact .contactContent .message form input,
+main .contact .contactContent .message form textarea{
+  height: 40px;
+  color: black;
+  font-size: medium;
+  padding: 7px;
+}
+
+main .contact .contactContent .message form textarea{
+  height: 120px;
+  resize: vertical;
+}
+
+main .contact .contactContent .message form #submit{
+  margin-left: auto;
+  width: fit-content;
+  background-color: #d3f5f5;;
+  padding: 5px 55px;
+}
+
+main .contact .contactContent .message form #submit:hover{
+  cursor: pointer;
+  background-color: #acf9f9;
+  transition: ease 0.4s;
+}
+
+main .contact .contactContent .info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+main .contact .contactContent .info h2,
+main .contact .contactContent .info> a,
+main .contact .contactContent .info div{
+  margin: 20px 30px;
+}
+
+main .contact .contactContent .info a{
+  text-decoration: none;
+}
