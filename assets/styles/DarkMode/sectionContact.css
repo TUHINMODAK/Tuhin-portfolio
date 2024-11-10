@@ -20,6 +20,20 @@ main .contact .contactSec .line {
   background-color: aliceblue;
 }
 
+main .contact .overview{
+  margin: 20px 50px;
+}
+
+main .contact .overview h2{
+  margin: 20px 0;
+}
+
+main .contact .overview p{
+  line-height: 2.5;
+    font-size: larger;
+    font-weight: 300;
+}
+
 main .contact .contactContent {
   display: flex;
   justify-content: space-evenly;
@@ -81,7 +95,7 @@ main .contact .contactContent .info {
   align-items: flex-end;
 }
 
-main .contact .contactContent .info h2,
+main .contact .contactContent .info h1,
 main .contact .contactContent .info > a,
 main .contact .contactContent .info div {
   margin: 20px 30px;

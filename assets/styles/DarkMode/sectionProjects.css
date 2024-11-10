@@ -1,3 +1,72 @@
 main .projects {
   background-color: rgb(21 21 56);
 }
+
+main .projects .projectInfo{
+  margin-left: 5rem;
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+main .projects .projectInfo h1{
+  /* margin-bottom: ; */
+  font-size: 2.5rem;
+}
+
+main .projects .projectInfo .line{
+  display: block;
+  height: 3px;
+  width: 50%;
+  margin-bottom: 50px;
+  background-color: aliceblue;
+}
+
+main .projects .projectGrid{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+/* card template */
+
+main .projects .projectGrid .projectCard {
+  /* margin: 17px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* width: auto; */
+  width: 95%;
+  height: 90vh;
+  margin: auto;
+  margin-top: 25px;
+  text-align: center;
+  font-family: arial;
+  overflow: hidden;
+}
+
+main .projects .projectGrid .projectCard img{
+  max-width: 100%;
+  max-height: 300px;
+}
+
+main .projects .projectGrid .projectCard .price {
+  color: grey;
+  font-size: 22px;
+}
+
+main .projects .projectGrid .projectCard button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+main .projects .projectGrid .projectCard button:hover {
+  opacity: 0.7;
+}

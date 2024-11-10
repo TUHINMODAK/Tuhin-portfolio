@@ -33,7 +33,8 @@ main .skills .skillset .carousel-skills {
 
 main .skills .skillset .carousel-skills .carousel-cards {
   display: flex;
-  transition: transform 1s ease-in-out; /* Smooth transition between slides */
+  /* flex-direction: column; */
+  transition: transform 1s ease-in-out; /*Smooth transition between slides*/
 }
 
 main .skills .skillset .carousel-skills .carousel-cards .card {
@@ -47,6 +48,7 @@ main .skills .skillset .carousel-skills .carousel-cards .card {
   align-items: center;
   justify-content: center;
 }
+
 main .skills .skillset .carousel-skills .carousel-cards .card .wrapper{
   background-color: #d3f5f5;
   width: 700px;

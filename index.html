@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="./assets/images/logo_dark.png" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/images/logo_dark.png"
+    />
 
     <link rel="stylesheet" href="./assets/styles/DarkMode/styles.css" />
     <link rel="stylesheet" href="./assets/styles/DarkMode/navbar.css" />
@@ -15,6 +19,7 @@
       href="./assets/styles/DarkMode/sectionProjects.css"
     />
     <link rel="stylesheet" href="./assets/styles/DarkMode/sectionContact.css" />
+    <link rel="stylesheet" href="./assets/styles/DarkMode/footer.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,7 +73,7 @@
 
           <a
             href="./assets/Tuhin-Modak-FlowCV-Resume-20241004 (7).pdf"
-            download="Resume.pdf"
+            download="Tuhin Modak Resume.pdf"
           >
             <button>Download Resume</button>
           </a>
@@ -243,7 +248,42 @@
       </section>
 
       <section id="projects" class="projects">
-        Hello this is Tuhin's projects!
+        <div class="projectInfo">
+          <h1>Projects</h1>
+          <span class="line"></span>
+          <h2>These are some of the projects made by me.</h2>
+        </div>
+
+        <div class="projectGrid">
+          <div class="projectCard">
+            <img src="./assets/images/projImages/portfolio.png" alt="Denim Jeans"/>
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+          <div class="projectCard">
+            <img src="./assets/images/projImages/self-photo.jpg" alt="Denim Jeans"/>
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+          <div class="projectCard">
+            <img src="jeans3.jpg" alt="Denim Jeans"/>
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+          <div class="projectCard">
+            <img src="jeans3.jpg" alt="Denim Jeans"/>
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
       </section>
 
       <section id="contact" class="contact">
@@ -251,25 +291,48 @@
         <div class="contactSec">
           <h1>Contact</h1>
           <span class="line"></span>
+
+          <div class="overview">
+            <h2>Get in Touch!</h2>
+            <p>
+              I’d love to hear from you! Whether you have a question, feedback,
+              or want to discuss a project, feel free to reach out. Let’s
+              connect and create something amazing together!
+            </p>
+          </div>
         </div>
         <div class="contactContent">
           <div class="message">
             <form action="">
               <label for="fname">Name</label>
-              <input type="text" id="fname" name="fname" placeholder="Enter your name"/>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Enter your name"
+              />
               <label for="mailid">Email</label>
-              <input type="email" id="mailid" name="mailid" placeholder="Enter your email id"/>
+              <input
+                type="email"
+                id="mailid"
+                name="mailid"
+                placeholder="Enter your email id"
+              />
               <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Enter your message"
+              ></textarea>
               <input id="submit" type="submit" value="Submit" />
             </form>
           </div>
           <div class="info">
-            <h2>Email</h2>
+            <h1>Email</h1>
             <a href="mailto:modaktuhin32@gmail.com">modaktuhin32@gmail.com</a>
-            <h2>Phone</h2>
+            <h1>Phone</h1>
             <a href="tel:+917431039814">7431039814</a>
-            <h2>Social</h2>
+            <h1>Social</h1>
             <div class="socials">
               <a href="https://www.facebook.com/tuhin.modak.73">
                 <i id="fb" class="fa fa-facebook-f"></i>
@@ -285,6 +348,8 @@
         </div>
       </section>
     </main>
+
+    <footer>footer</footer>
 
     <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
