@@ -227,22 +227,31 @@
           </div>
 
           <h2>Hands-on</h2>
-        </div>
-
-        <div class="ticker-container">
-          <div class="ticker">
-            <!-- Logos repeated twice to achieve seamless scrolling -->
-            <img src="logo1.png" alt="Company 1" />
-            <img src="logo2.png" alt="Company 2" />
-            <img src="logo3.png" alt="Company 3" />
-            <img src="logo4.png" alt="Company 4" />
-            <img src="logo5.png" alt="Company 5" />
-            <!-- Repeat the logos to create a continuous effect -->
-            <img src="logo1.png" alt="Company 1" />
-            <img src="logo2.png" alt="Company 2" />
-            <img src="logo3.png" alt="Company 3" />
-            <img src="logo4.png" alt="Company 4" />
-            <img src="logo5.png" alt="Company 5" />
+          <div class="languages">
+            <div class="language-container inactive">
+              <div class="items">A</div>
+              <div class="items">B</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+              <div class="items">A</div>
+            </div>
+            <button class="open-close" onclick="togglebtn()"><span class="strokes"><span class="stroke down-left"></span><span class="stroke down-right"></span></span></button>
           </div>
         </div>
       </section>
@@ -256,32 +265,54 @@
 
         <div class="projectGrid">
           <div class="projectCard">
-            <img src="./assets/images/projImages/portfolio.png" alt="Denim Jeans"/>
+            <img
+              src="./assets/images/projImages/portfolio.png"
+              alt="Denim Jeans"
+            />
             <h1>Tailored Jeans</h1>
-            <p class="price">$19.99</p>
-            <p>Some text about the jeans..</p>
-            <p><button>Add to Cart</button></p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium impedit iure nesciunt non nam porro debitis rerum
+              corporis perferendis autem! Accusantium iusto sed commodi nisi
+              eos, natus fugiat, aut exercitationem in nostrum quas! Dolorum
+              odit praesentium fuga est ratione quisquam explicabo blanditiis
+              earum ad, similique, laboriosam nulla nostrum cupiditate magni!
+              Nostrum deserunt, optio quis est nisi earum qui sapiente placeat
+              vitae. Perspiciatis, numquam fuga facere provident illum
+              voluptates quaerat quidem impedit amet labore exercitationem rem
+              dolor fugiat laboriosam repellendus aliquam, tempore esse. Eum
+              earum asperiores perspiciatis nemo laboriosam dolores eos officiis
+              error sint fugiat ipsum odit, in dolorem mollitia cupiditate
+              tempora veniam. Debitis voluptatum repellendus unde labore odio in
+              voluptates rerum facere quibusdam omnis cupiditate, corporis
+              deserunt, quo aliquam tempore consequuntur. Officiis quo assumenda
+              accusamus laudantium quibusdam, nam non voluptate nulla fugit
+              dolores sapiente similique nisi magni ipsum excepturi dolorum,
+              ipsa quis perferendis. Quam explicabo omnis minus odit velit.
+              Molestias.
+            </div>
+            <p><button>Github</button></p>
           </div>
           <div class="projectCard">
-            <img src="./assets/images/projImages/self-photo.jpg" alt="Denim Jeans"/>
+            <img
+              src="./assets/images/projImages/self-photo.jpg"
+              alt="Denim Jeans"
+            />
             <h1>Tailored Jeans</h1>
-            <p class="price">$19.99</p>
-            <p>Some text about the jeans..</p>
-            <p><button>Add to Cart</button></p>
+            <div class="description">Some text about the jeans..</div>
+            <p><button>Github</button></p>
           </div>
           <div class="projectCard">
-            <img src="jeans3.jpg" alt="Denim Jeans"/>
+            <img src="jeans3.jpg" alt="Denim Jeans" />
             <h1>Tailored Jeans</h1>
-            <p class="price">$19.99</p>
-            <p>Some text about the jeans..</p>
-            <p><button>Add to Cart</button></p>
+            <div class="description">Some text about the jeans..</div>
+            <p><button>Github</button></p>
           </div>
           <div class="projectCard">
-            <img src="jeans3.jpg" alt="Denim Jeans"/>
+            <img src="jeans3.jpg" alt="Denim Jeans" />
             <h1>Tailored Jeans</h1>
-            <p class="price">$19.99</p>
-            <p>Some text about the jeans..</p>
-            <p><button>Add to Cart</button></p>
+            <div class="description">Some text about the jeans..</div>
+            <p><button>Github</button></p>
           </div>
         </div>
       </section>
@@ -356,7 +387,7 @@
 
     <!-- Setup and start animation! -->
     <script src="./assets/scripts/carousel-skills.js"></script>
-    <script src="./assets/scripts/carousel-container.js"></script>
+    <script src="./assets/scripts/language-container.js"></script>
     <script>
       var typed = new Typed("#element", {
         strings: [

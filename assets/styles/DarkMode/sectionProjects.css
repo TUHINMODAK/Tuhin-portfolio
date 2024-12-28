@@ -25,6 +25,7 @@ main .projects .projectGrid{
   width: 90%;
   margin: auto;
   display: grid;
+  gap: 22px 26px;
   grid-template-columns: 1fr 1fr;
   /* align-items: center; */
   /* justify-content: center; */
@@ -33,9 +34,10 @@ main .projects .projectGrid{
 /* card template */
 
 main .projects .projectGrid .projectCard {
-  /* margin: 17px; */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /* width: auto; */
+  position: relative;
+  background-color: rgb(55, 55, 127);
+  border-radius: 8px;
+  box-shadow: 12px 8px 10px 1px rgba(42, 42, 98, 0.507);
   width: 95%;
   height: 90vh;
   margin: auto;
@@ -45,17 +47,26 @@ main .projects .projectGrid .projectCard {
   overflow: hidden;
 }
 
+main .projects .projectGrid .projectCard h1{
+  margin: 12px 0;
+}
+
 main .projects .projectGrid .projectCard img{
   max-width: 100%;
   max-height: 300px;
 }
 
-main .projects .projectGrid .projectCard .price {
-  color: grey;
-  font-size: 22px;
+main .projects .projectGrid .projectCard .description {
+  height: 28vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  font-size: larger;
 }
 
 main .projects .projectGrid .projectCard button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   border: none;
   outline: 0;
   padding: 12px;

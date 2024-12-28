@@ -1,5 +1,6 @@
 main .skills {
   background-color: rgb(31, 31, 61);
+  padding-bottom: 50px;
 }
 
 main .skills .skillset {
@@ -49,7 +50,7 @@ main .skills .skillset .carousel-skills .carousel-cards .card {
   justify-content: center;
 }
 
-main .skills .skillset .carousel-skills .carousel-cards .card .wrapper{
+main .skills .skillset .carousel-skills .carousel-cards .card .wrapper {
   background-color: #d3f5f5;
   width: 700px;
   height: 400px;
@@ -67,18 +68,43 @@ main .skills .skillset .carousel-skills .carousel-cards .card .wrapper .upper {
   align-items: center;
 }
 
-main .skills .skillset .carousel-skills .carousel-cards .card .wrapper .upper .symbol {
+main
+  .skills
+  .skillset
+  .carousel-skills
+  .carousel-cards
+  .card
+  .wrapper
+  .upper
+  .symbol {
   height: 100px;
   width: 100px;
   overflow: hidden;
 }
 
-main .skills .skillset .carousel-skills .carousel-cards .card .wrapper .upper .symbol img {
+main
+  .skills
+  .skillset
+  .carousel-skills
+  .carousel-cards
+  .card
+  .wrapper
+  .upper
+  .symbol
+  img {
   height: 100px;
   width: 100px;
 }
 
-main .skills .skillset .carousel-skills .carousel-cards .card .wrapper .upper p {
+main
+  .skills
+  .skillset
+  .carousel-skills
+  .carousel-cards
+  .card
+  .wrapper
+  .upper
+  p {
   color: black;
   font-size: xx-large;
   font-weight: 600;
@@ -99,36 +125,78 @@ main .skills .skillset .carousel-skills .carousel-cards .card .wrapper > p {
   margin-top: 5px;
   line-height: 1.7em;
 }
-/* ticker testing */
 
-/* Ticker container */
-.ticker-container {
-  width: 100%;                 /* Full width of the screen */
-  overflow: hidden;            /* Hide overflowing content */
-  background-color: #ef4444;   /* Optional background */
-  padding: 10px 0;
-  box-sizing: border-box;
-  white-space: nowrap;         /* Prevent line breaks */
+main .skills .skillset .languages {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 25px;
 }
 
-/* Ticker content */
-.ticker {
-  display: inline-flex;        /* Arrange logos in a row */
-  animation: ticker 10s linear infinite; /* Continuous scroll */
+main .skills .skillset .languages .language-container {
+  background-color: #6c9fdb;
+  margin: auto;
+  padding-bottom: 11px;
 }
 
-.ticker img {
-  width: 100px;                /* Set the size of logos */
-  height: auto;
-  margin-right: 20px;          /* Space between logos */
+.inactive {
+  display: flex;
+  width: fit-content;
 }
 
-/* Keyframes for infinite smooth scrolling */
-@keyframes ticker {
-  0% {
-      transform: translateX(0);   /* Start position */
-  }
-  100% {
-      transform: translateX(-50%); /* Move by half, as logos are duplicated */
-  }
+.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+main .skills .skillset .languages .language-container .items {
+  height: 50px;
+  width: 150px;
+  margin: 25px;
+  background-color: beige;
+  color: black;
+}
+
+main .skills .skillset .languages button {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  bottom: 0px;
+  left: 50%;
+  color: black;
+}
+
+main .skills .skillset .languages button:hover {
+  cursor: pointer;
+}
+
+main .skills .skillset .languages button .stroke{
+  display: block;
+  height: 3px;
+  width: 28px;
+  background-color: rgb(31, 50, 67);
+  position: absolute;
+  top: 21px;
+  transition: 0.3s ease;
+}
+
+.up-left {
+  left: 0px;
+  transform: rotate(-45deg);
+}
+
+.up-right {
+  left: 18px;
+  transform: rotate(45deg);
+}
+
+.down-left {
+  left: 0px;
+  transform: rotate(45deg);
+}
+
+.down-right {
+  left: 18px;
+  transform: rotate(-45deg);
 }
