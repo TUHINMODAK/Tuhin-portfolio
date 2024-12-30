@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  color: #000885;
+}
+
+main section {
+  padding-top: 20vh;
+  padding-bottom: 20px;
+  min-height: 88vh;
+}
+
+/* Common styles below */
+
+/* main .about_me,
+main .projects {
+  background-color: rgb(21 21 56);
+}
+
+main .skills,
+main .contact {
+  background-color: rgb(31, 31, 61);
+}
+
+main .about_me .about,
+main .skills .skillset {
+  margin-left: 5rem;
+  width: 80%;
+}
+
+main .about_me .about h1,
+main .skills .skillset h1 {
+  font-size: 2.5rem;
+}
+
+main .about_me .about .line,
+main .skills .skillset .line {
+  display: block;
+  height: 3px;
+  width: 50%;
+  margin-bottom: 50px;
+  background-color: aliceblue;
+} */

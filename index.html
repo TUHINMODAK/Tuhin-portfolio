@@ -6,20 +6,20 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href="./assets/images/logo_dark.png"
+      href="./assets/images/logos/logo_dark.png"
     />
 
-    <link rel="stylesheet" href="./assets/styles/DarkMode/styles.css" />
-    <link rel="stylesheet" href="./assets/styles/DarkMode/navbar.css" />
-    <link rel="stylesheet" href="./assets/styles/DarkMode/sectionHome.css" />
-    <link rel="stylesheet" href="./assets/styles/DarkMode/sectionAboutMe.css" />
-    <link rel="stylesheet" href="./assets/styles/DarkMode/sectionSkills.css" />
-    <link
+    <link class="cssPage" rel="stylesheet" href="./assets/styles/DarkMode/styles.css" />
+    <link class="cssPage" rel="stylesheet" href="./assets/styles/DarkMode/navbar.css" />
+    <link class="cssPage" rel="stylesheet" href="./assets/styles/DarkMode/sectionHome.css" />
+    <link class="cssPage" rel="stylesheet" href="./assets/styles/DarkMode/sectionAboutMe.css" />
+    <link class="cssPage" rel="stylesheet" href="./assets/styles/DarkMode/sectionSkills.css" />
+    <link class="cssPage"
       rel="stylesheet"
       href="./assets/styles/DarkMode/sectionProjects.css"
     />
-    <link rel="stylesheet" href="./assets/styles/DarkMode/sectionContact.css" />
-    <link rel="stylesheet" href="./assets/styles/DarkMode/footer.css" />
+    <link class="cssPage" rel="stylesheet" href="./assets/styles/DarkMode/sectionContact.css" />
+    <link class="cssPage" rel="stylesheet" href="./assets/styles/DarkMode/footer.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,7 +47,7 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <button></button>
+            <button id="theme"></button>
           </li>
         </ul>
       </div>
@@ -72,7 +72,7 @@
           </div>
 
           <a
-            href="./assets/Tuhin-Modak-FlowCV-Resume-20241004 (7).pdf"
+            href="./assets/Tuhin-Modak-Resume.pdf"
             download="Tuhin Modak Resume.pdf"
           >
             <button>Download Resume</button>
@@ -81,7 +81,7 @@
 
         <div class="rightSection">
           <div class="photo">
-            <img src="./assets/images/self-photo.jpg" alt="" />
+            <img src="./assets/images/dp/self-photo.jpg" alt="" />
           </div>
         </div>
       </section>
@@ -99,6 +99,39 @@
             becoming a successful Engineer. I love to solve problem especially
             if they are related to coding.
           </p>
+          <h2>Educational Qualification</h2>
+        </div>
+        <div class="qualification-wrapper">
+          <span class="qualification-timeline"></span>
+          <div class="qualification">
+            <div class="achivements">
+              <img src="./assets/images/qualificationIcon/sec.png" alt="">
+              <span class="arrow"></span>
+              <h2>Lorem, ipsum.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                ex iusto vitae necessitatibus voluptas adipisci?
+              </p>
+            </div>
+            <div class="achivements">
+              <img src="./assets/images/qualificationIcon/hs.png" alt="">
+              <span class="arrow"></span>
+              <h2>Lorem, ipsum.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                ex iusto vitae necessitatibus voluptas adipisci?
+              </p>
+            </div>
+            <div class="achivements">
+              <img src="./assets/images/qualificationIcon/graduate.png" alt="">
+              <span class="arrow"></span>
+              <h2>Lorem, ipsum.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                ex iusto vitae necessitatibus voluptas adipisci?
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -114,7 +147,7 @@
                   <div class="upper">
                     <div class="symbol">
                       <img
-                        src="./assets/images/programming-language skills.png"
+                        src="./assets/images/skillSet/programming-language skills.png"
                         alt=""
                       />
                     </div>
@@ -134,7 +167,7 @@
                   <div class="upper">
                     <div class="symbol">
                       <img
-                        src="./assets/images/technologies skills.png"
+                        src="./assets/images/skillSet/technologies skills.png"
                         alt=""
                       />
                     </div>
@@ -154,7 +187,7 @@
                   <div class="upper">
                     <div class="symbol">
                       <img
-                        src="./assets/images/software-developement skills.png"
+                        src="./assets/images/skillSet/software-developement skills.png"
                         alt=""
                       />
                     </div>
@@ -173,7 +206,10 @@
                 <div class="wrapper">
                   <div class="upper">
                     <div class="symbol">
-                      <img src="./assets/images/database skills.png" alt="" />
+                      <img
+                        src="./assets/images/skillSet/database skills.png"
+                        alt=""
+                      />
                     </div>
                     <p>Database</p>
                   </div>
@@ -191,7 +227,7 @@
                   <div class="upper">
                     <div class="symbol">
                       <img
-                        src="./assets/images/problem-solving skill.png"
+                        src="./assets/images/skillSet/problem-solving skill.png"
                         alt=""
                       />
                     </div>
@@ -210,7 +246,10 @@
                 <div class="wrapper">
                   <div class="upper">
                     <div class="symbol">
-                      <img src="./assets/images/soft skills.png" alt="" />
+                      <img
+                        src="./assets/images/skillSet/soft skills.png"
+                        alt=""
+                      />
                     </div>
                     <p>Soft Skills</p>
                   </div>
@@ -229,29 +268,67 @@
           <h2>Hands-on</h2>
           <div class="languages">
             <div class="language-container inactive">
-              <div class="items">A</div>
-              <div class="items">B</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
-              <div class="items">A</div>
+              <div class="items">
+                <img src="./assets/images/prgLang/arduino.png" alt="" />
+              </div>
+              <div class="items">
+                <img src="./assets/images/prgLang/CSS-Logo-2011.png" alt="" />
+              </div>
+              <div class="items">
+                <img src="./assets/images/prgLang/Expressjs.png" alt="" />
+              </div>
+              <div class="items">
+                <img
+                  src="./assets/images/prgLang/HTML5_logo_and_wordmark.svg.png"
+                  alt=""
+                />
+              </div>
+              <div class="items">
+                <img
+                  src="./assets/images/prgLang/Java_programming_language_logo.svg.png"
+                  alt=""
+                />
+              </div>
+              <div class="items">
+                <img src="./assets/images/prgLang/js.png" alt="" />
+              </div>
+              <div class="items">
+                <img src="./assets/images/prgLang/mavenlogo.png" alt="" />
+              </div>
+              <div class="items">
+                <img src="./assets/images/prgLang/mongodb.png" alt="" />
+              </div>
+              <div class="items">
+                <img src="./assets/images/prgLang/mysql-logo-1.svg" alt="" />
+              </div>
+              <div class="items">
+                <img src="./assets/images/prgLang/Node.js_logo.svg" alt="" />
+              </div>
+              <div class="items">
+                <img
+                  src="./assets/images/prgLang/Python-logo-notext.svg.png"
+                  alt=""
+                />
+              </div>
+              <div class="items">
+                <img src="./assets/images/prgLang/reactjs.png" alt="" />
+              </div>
+              <div class="items">
+                <img src="./assets/images/prgLang/spring-boot.webp" alt="" />
+              </div>
+              <div class="items">
+                <img
+                  src="./assets/images/prgLang/Tailwind_CSS_logo.svg.png"
+                  alt=""
+                />
+              </div>
             </div>
-            <button class="open-close" onclick="togglebtn()"><span class="strokes"><span class="stroke down-left"></span><span class="stroke down-right"></span></span></button>
+            <button class="open-close" onclick="togglebtn()">
+              <span class="strokes"
+                ><span class="stroke down-left"></span
+                ><span class="stroke down-right"></span
+              ></span>
+            </button>
           </div>
         </div>
       </section>
@@ -380,7 +457,7 @@
       </section>
     </main>
 
-    <footer>footer</footer>
+    <footer><h2>Designed By Tuhin Modak </h2> &copy;</footer>
 
     <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -388,6 +465,7 @@
     <!-- Setup and start animation! -->
     <script src="./assets/scripts/carousel-skills.js"></script>
     <script src="./assets/scripts/language-container.js"></script>
+    <script src="./assets/scripts/changeCss.js"></script>
     <script>
       var typed = new Typed("#element", {
         strings: [

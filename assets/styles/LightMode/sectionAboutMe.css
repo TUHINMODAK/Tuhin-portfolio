@@ -1,5 +1,5 @@
 main .about_me{
-  background-color: rgb(21 21 56);
+  background-color: #F3F4F6;
 }
 
 main .about_me .about{
@@ -17,7 +17,7 @@ main .about_me .about .line{
   height: 3px;
   width: 50%;
   margin-bottom: 50px;
-  background-color: aliceblue;
+  background-color: #000885;
 }
 
 main .about_me .about p {
@@ -39,7 +39,7 @@ main .about_me .qualification-wrapper .qualification-timeline{
   display: block;
   height: 2px;
   width: 100%;
-  background-color: white;
+  background-color: black;
   /* display: flex;
   justify-content: space-between; */
 }
@@ -69,5 +69,5 @@ main .about_me .qualification-wrapper .qualification .achivements .arrow{
   display: block;
   height: 8vh;
   width: 2px;
-  background-color: white;
+  background-color: black;
 }

@@ -1,0 +1,161 @@
+main .contact {
+  background-color: white;
+}
+
+main .contact .contactSec {
+  margin-left: 5rem;
+  width: 80%;
+}
+
+main .contact .contactSec h1 {
+  /* margin-bottom: ; */
+  font-size: 2.5rem;
+}
+
+main .contact .contactSec .line {
+  display: block;
+  height: 3px;
+  width: 50%;
+  margin-bottom: 50px;
+  background-color: #000885;
+}
+
+main .contact .overview{
+  margin: 20px 50px;
+}
+
+main .contact .overview h2{
+  margin: 20px 0;
+}
+
+main .contact .overview p{
+  line-height: 2.5;
+    font-size: larger;
+    font-weight: 300;
+}
+
+main .contact .contactContent {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .contact .contactContent > div {
+  /* background-color: red; */
+  width: 40%;
+  height: auto;
+}
+
+main .contact .contactContent .message form {
+  margin: 3% 3%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main .contact .contactContent .message form label,
+main .contact .contactContent .message form input,
+main .contact .contactContent .message form textarea {
+  margin: 10px 0;
+  border: none;
+  border-radius: 7px;
+}
+
+main .contact .contactContent .message form label {
+  font-size: larger;
+  font-weight: 700;
+}
+
+main .contact .contactContent .message form input,
+main .contact .contactContent .message form textarea {
+  border: #000885 solid 2px;
+  height: 40px;
+  color: black;
+  font-size: medium;
+  padding: 7px;
+}
+
+main .contact .contactContent .message form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+main .contact .contactContent .message form #submit {
+  border: none;
+  margin-left: auto;
+  width: fit-content;
+  background-color: rgb(119, 119, 252);
+  padding: 5px 55px;
+}
+
+main .contact .contactContent .message form #submit:hover {
+  cursor: pointer;
+  background-color: rgb(148, 148, 252);
+  transition: ease 0.4s;
+}
+
+main .contact .contactContent .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+main .contact .contactContent .info h1,
+main .contact .contactContent .info > a,
+main .contact .contactContent .info div {
+  margin: 20px 30px;
+}
+
+main .contact .contactContent .info > a {
+  font-weight: 500;
+  font-size: larger;
+}
+
+main .contact .contactContent .info .socials {
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+  width: inherit;
+  align-items: center;
+  justify-content: space-around;
+  /* padding:25px; */
+  /* background-color: rgb(81, 96, 108); */
+}
+
+main .contact .contactContent .info .socials a {
+  text-decoration: none;
+  height: inherit;
+  width: 56px;
+  position: relative;
+  /* margin: 2rem; */
+}
+
+main .contact .contactContent .info .socials a i {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  color: #000885;
+  font-size: 48px;
+}
+
+main .contact .contactContent .info .socials a #insta {
+  color: #000885; /* Default white color */
+  transition: background 0.5s ease;
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-color: transparent;
+}
+
+main .contact .contactContent .info .socials a #fb:hover {
+  color: #0866ff;
+  transition: 0.3s ease;
+}
+main .contact .contactContent .info .socials a #insta:hover {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.3s ease;
+}
+
+main .contact .contactContent .info .socials a #linkedin:hover {
+  color: #0077b5;
+  transition: 0.3s ease;
+}
